@@ -1,0 +1,23 @@
+:root {
+  /* color palette */
+  --primary-color-dark: #455a64;
+  --primary-color: #607d8b;
+  --primary-color-light: #cfd8dc;
+  --primary-color-text: #ffffff;
+  --accent-color: #ff5722;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+
+  /* fonts */
+  --font-main: 'Noto Sans', sans-serif;
+  --font-code: 'Source Code Pro', monospace;
+
+  /* sizes */
+  --mobile-size: 360px;
+  --small-size: 600px;
+  --big-size: 1280px;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Source+Code+Pro:wght@500&display=swap');
