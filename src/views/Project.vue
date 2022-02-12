@@ -12,7 +12,7 @@
       <p>{{ pro.overview }}</p>
     </div>
     <div v-if="pro.features">
-      <h3>{{ lang === 'en' ? 'Features' : 'Характеристики' }}"</h3>
+      <h3>{{ lang === 'en' ? 'Features' : 'Характеристики' }}</h3>
       <ul>
         <li v-for="(feature, index) in pro.features" :key="index">
           {{ feature }}
@@ -30,10 +30,14 @@
     </div>
     <div v-if="pro.extra">
       <h3>{{ pro.extra.title }}</h3>
-      <p>
-        <a :href="pro.extra.link" target="_blank" rel="noopener noreferrer">
+      <p v-for="(nm, ixName) in pro.extra.name" :key="ixName">
+        <a
+          :href="pro.extra.link[ixName]"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fas fa-info-circle fa-lg"></i>
-          {{ pro.extra.name }}
+          {{ nm }}
         </a>
       </p>
     </div>

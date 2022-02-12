@@ -8,8 +8,8 @@
  * @property {string} img
  * @property {Object} [extra]
  * @property {string} extra.title - The title
- * @property {string} extra.name - Name
- * @property {string} extra.link - link to site or repository online
+ * @property {string[]} extra.name - Name
+ * @property {string[]} extra.link - link to site or repository online
  */
 
 /**
@@ -20,7 +20,7 @@ export const projectsEn = [
     name: 'WebSmeta',
     description: 'Huge enterprise web app for local estimate',
     overview: `
-      Distributed web-application for local estimates creation hving lots of 
+      Distributed web-application for local estimates creation having lots of 
       features and possibilities for user
     `,
     features: [
@@ -33,8 +33,8 @@ export const projectsEn = [
     ],
     extra: {
       title: 'Links',
-      name: 'Company site',
-      link: 'https://gosstroysmeta.ru'
+      name: ['Site', 'Company'],
+      link: ['https://gss-online.ru', 'https://gosstroysmeta.ru']
     },
     img: '/img/projects/websmeta.png'
   },
@@ -89,8 +89,8 @@ export const projectsEn = [
     ],
     extra: {
       title: 'Links',
-      name: 'Company site',
-      link: 'https://gosstroysmeta.ru'
+      name: ['Company site'],
+      link: ['https://gosstroysmeta.ru']
     },
     img: '/img/projects/gss.png'
   },
@@ -183,8 +183,8 @@ export const projectsRu = [
     ],
     extra: {
       title: 'Ссылки',
-      name: 'Сайт компании',
-      link: 'https://gosstroysmeta.ru'
+      name: ['Сайт', 'Компания'],
+      link: ['https://gss-online.ru', 'https://gosstroysmeta.ru']
     },
     img: '/img/projects/websmeta.png'
   },
@@ -241,8 +241,8 @@ export const projectsRu = [
     ],
     extra: {
       title: 'Ссылки',
-      name: 'Сайт компании',
-      link: 'https://gosstroysmeta.ru'
+      name: ['Сайт компании'],
+      link: ['https://gosstroysmeta.ru']
     },
     img: '/img/projects/gss.png'
   },
