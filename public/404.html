@@ -2,25 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/fonts.css" crossorigin="anonymous" />
     <meta
-      name="description"
-      content="Andrey Zhdanov personal page. Application developer for desktop, web (full stack)"
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Andrey Zhdanov = new Developer([web, desktop])</title>
+    <style type="text/css">
+      body {
+        box-sizing: border-box;
+        background: #333;
+        color: #eaeaea;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
   </head>
-  <body>
-    <noscript>
-      <strong
-        >We're sorry but this project doesn't work properly without JavaScript
-        enabled. Please enable it to continue.</strong
-      >
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+  <body onload="doLoad()">
+    <script>
+      function doLoad() {
+        setTimeout(() => {
+          document.location.href = '/index.html';
+        }, 100);
+      }
+    </script>
   </body>
 </html>
