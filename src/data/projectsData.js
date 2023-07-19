@@ -51,7 +51,7 @@ export const projectsEn = [
       'View extended properties on eny selected item',
       'Collapse and expand cost additional information'
     ],
-    src: 'https://github.com/zag82/gsmeta',
+    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/gsmeta',
     img: '/img/projects/gsmeta.png'
   },
   {
@@ -70,7 +70,6 @@ export const projectsEn = [
       'Application is mobile friendly and can be saved at mobile phone starting page',
       'Notes are constantly sync with Firebase server database'
     ],
-    src: 'https://github.com/zag82/qnotes',
     img: '/img/projects/qnotes.png'
   },
   {
@@ -134,7 +133,7 @@ export const projectsEn = [
       'Manual signal analysis',
       'Scripting module for data processing automation'
     ],
-    src: 'https://github.com/zag82/ariel',
+    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/ariel',
     img: '/img/projects/ariel.png'
   },
   {
@@ -156,7 +155,7 @@ export const projectsEn = [
       'Calculations of potentials, flux dencity, intencity',
       'Calculations on magnetic curve for ferromagnetic materials'
     ],
-    src: 'https://github.com/zag82/magnum3d',
+    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/magnum3d',
     img: '/img/projects/magnum3d.png'
   }
 ];
@@ -201,7 +200,7 @@ export const projectsRu = [
       'Просмотр дополнительной информации по выбранному элементу',
       'Сворачивание и разворачивание расценок для просмотра дополнительной детализациии'
     ],
-    src: 'https://github.com/zag82/gsmeta',
+    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/gsmeta',
     img: '/img/projects/gsmeta.png'
   },
   {
@@ -221,7 +220,6 @@ export const projectsRu = [
       'Приложение адаптировано для мобильных телефонов',
       'Данные приложения постоянно синхронизированы с базой на сервере'
     ],
-    src: 'https://github.com/zag82/qnotes',
     img: '/img/projects/qnotes.png'
   },
   {
@@ -285,7 +283,7 @@ export const projectsRu = [
       'Ручной анализ сигналов',
       'Скриптовой модуль для автоматизации анализа и обработки данных'
     ],
-    src: 'https://github.com/zag82/ariel',
+    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/ariel',
     img: '/img/projects/ariel.png'
   },
   {
@@ -307,7 +305,7 @@ export const projectsRu = [
       'Расчет потенциалов, плотности потока',
       'Учет кривой намагничивания для магнитных материалов'
     ],
-    src: 'https://github.com/zag82/magnum3d',
+    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/magnum3d',
     img: '/img/projects/magnum3d.png'
   }
 ];
