@@ -1,0 +1,17 @@
+.smaller {
+  font-size: 90%;
+}
+
+// equal heights of object inspector and main grid
+.equal-height {
+  display: flex;
+  flex-direction: column;
+
+  & > .card {
+    height: 100%;
+  }
+}
+
+.skip-navbar {
+  margin-top: 5rem;
+}

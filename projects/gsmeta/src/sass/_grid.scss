@@ -1,0 +1,112 @@
+// editing line
+.row.grid-edit-line {
+  .col {
+    margin: 0 0.5rem;
+    border: 1px solid theme-color('dark');
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: lighten($color: theme-color('dark'), $amount: 12);
+  }
+}
+
+// items inside grid
+.row.grid-header {
+  margin: 1rem -0.5rem 0;
+  text-align: center;
+
+  [class^='col-'] {
+    background-color: theme-color('dark');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid lighten($color: theme-color('dark'), $amount: 12);
+  }
+}
+
+.grid-part-header,
+.grid-cost-header,
+.grid-cost-details,
+.grid-resource-header {
+  margin: 0 -0.5rem;
+  color: black;
+  border-bottom: 1px solid lighten($color: theme-color('dark'), $amount: 40);
+}
+
+.grid-part-header {
+  font-weight: bold;
+  background-color: #dddbd9;
+}
+.grid-cost-header {
+  background-color: white;
+}
+.grid-cost-details {
+  background-color: theme-color('light');
+  font-size: 90%;
+}
+.grid-resource-header {
+  font-size: 90%;
+}
+.res-material {
+  background-color: #e6e6ee;
+}
+.res-labor {
+  background-color: #fafac8;
+}
+.res-machines {
+  background-color: #c8ffc8;
+}
+.res-equipment {
+  background-color: #f4d08c;
+}
+
+.cost-fld-number {
+  display: flex;
+  justify-content: stretch;
+}
+.cost-fld-number-last {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+.cost-fld-number-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
+    display: block;
+  }
+}
+
+// selection and collapsing items
+.selected {
+  background-color: #98c9e9 !important;
+  color: black !important;
+
+  .black-plus,
+  .blue-plus {
+    visibility: visible;
+  }
+}
+
+.black-plus {
+  color: black;
+  visibility: hidden;
+  margin-right: 0.3rem;
+  &:hover,
+  &:visited,
+  &:active {
+    color: black;
+  }
+}
+.blue-plus {
+  color: rgb(0, 119, 255);
+  visibility: hidden;
+  margin-right: 0.3rem;
+  &:hover,
+  &:visited,
+  &:active {
+    color: rgb(0, 119, 255);
+  }
+}

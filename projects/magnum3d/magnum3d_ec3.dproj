@@ -1,0 +1,231 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B7F8EC2C-89BA-45BC-A9E2-55899E4669C4}</ProjectGuid>
+			<MainSource>magnum3d_ec3.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_DependencyCheckOutputName>magnum3d_ec3.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="magnum3d_ec3.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="main.pas">
+				<Form>fmMain</Form>
+			</DCCReference>
+			<DCCReference Include="splash.pas">
+				<Form>fmSplash</Form>
+			</DCCReference>
+			<DCCReference Include="Forms\pre_proc.pas">
+				<Form>fmPreprocessor</Form>
+			</DCCReference>
+			<DCCReference Include="common\cm_ini.pas"/>
+			<DCCReference Include="common\cmData.pas"/>
+			<DCCReference Include="common\cmProc.pas"/>
+			<DCCReference Include="common\cmVars.pas"/>
+			<DCCReference Include="2d\ec_main2d.pas"/>
+			<DCCReference Include="2d\el_main2d.pas"/>
+			<DCCReference Include="2d\Ss_main2d.pas"/>
+			<DCCReference Include="2d\common_main2d.pas"/>
+			<DCCReference Include="Forms\solve2d.pas">
+				<Form>fmSolver2</Form>
+			</DCCReference>
+			<DCCReference Include="Forms\control_ec.pas">
+				<Form>fmControlCenterEC</Form>
+			</DCCReference>
+			<DCCReference Include="Complx.pas"/>
+			<DCCReference Include="child.pas">
+				<Form>fmChild</Form>
+			</DCCReference>
+			<DCCReference Include="3d\axu_3.pas"/>
+			<DCCReference Include="3d\Comvars.pas"/>
+			<DCCReference Include="Forms\solve3d.pas">
+				<Form>fmSolver3d</Form>
+			</DCCReference>
+			<DCCReference Include="3d\ax_add.pas"/>
+			<DCCReference Include="Forms\app_view.pas">
+				<Form>fmSolveView</Form>
+			</DCCReference>
+			<DCCReference Include="3d\solve_Thread.pas"/>
+			<DCCReference Include="Forms\SystemInformation.pas">
+				<Form>fmSysInfo</Form>
+			</DCCReference>
+			<DCCReference Include="tlbrs.pas">
+				<Form>fmToolBars</Form>
+			</DCCReference>
+			<DCCReference Include="cmParams.pas">
+				<Form>fmParams</Form>
+			</DCCReference>
+			<DCCReference Include="Forms\control_ss.pas">
+				<Form>fmControlM</Form>
+			</DCCReference>
+			<DCCReference Include="Post\pp_2.pas">
+				<Form>fmPostProcessor2</Form>
+			</DCCReference>
+			<DCCReference Include="Post\graph_2.pas">
+				<Form>fmGraph2</Form>
+			</DCCReference>
+			<DCCReference Include="Post\vi_2.pas">
+				<Form>fmVInspector2</Form>
+			</DCCReference>
+			<DCCReference Include="Post\p2_data.pas"/>
+			<DCCReference Include="post3\vi_3.pas">
+				<Form>fmVInspector3</Form>
+			</DCCReference>
+			<DCCReference Include="post3\graph_3.pas">
+				<Form>fmGraph3</Form>
+			</DCCReference>
+			<DCCReference Include="post3\pp_3.pas">
+				<Form>fmPostProcessor3</Form>
+			</DCCReference>
+			<DCCReference Include="post3\p3_data.pas"/>
+			<DCCReference Include="post3\gl_ob.pas"/>
+			<DCCReference Include="post3\Compute_VectorsUnit.pas"/>
+			<DCCReference Include="Forms\ec_signal.pas">
+				<Form>fmSignal</Form>
+			</DCCReference>
+			<DCCReference Include="mmProc\multiedit.pas">
+				<Form>fmMultiEdit</Form>
+			</DCCReference>
+			<DCCReference Include="mmProc\mm_data.pas"/>
+			<DCCReference Include="mmProc\multisolve.pas">
+				<Form>fmMultiSolve</Form>
+			</DCCReference>
+			<DCCReference Include="mmProc\mm_solve.pas"/>
+			<DCCReference Include="mmProc\mm_dlg.pas">
+				<Form>fmMDlg</Form>
+			</DCCReference>
+			<DCCReference Include="mmProc\mmPWD.pas">
+				<Form>fmPWD</Form>
+			</DCCReference>
+			<DCCReference Include="mmProc\mm_dir.pas">
+				<Form>fmDirs</Form>
+			</DCCReference>
+			<DCCReference Include="mmProc\mmPass.pas">
+				<Form>fmPass</Form>
+			</DCCReference>
+			<DCCReference Include="Forms\solvenl.pas">
+				<Form>fmSolveNl</Form>
+			</DCCReference>
+			<DCCReference Include="Post\comp_vec.pas"/>
+			<DCCReference Include="3d\ec_queue.pas">
+				<Form>fmQueue</Form>
+			</DCCReference>
+			<DCCReference Include="opt_1.pas">
+				<Form>fmMFOptimization</Form>
+			</DCCReference>
+			<DCCReference Include="opt_view.pas">
+				<Form>fmOpView</Form>
+			</DCCReference>
+			<DCCReference Include="Forms\solvenl3.pas">
+				<Form>fmNonLine3</Form>
+			</DCCReference>
+			<DCCReference Include="nonline2d.pas"/>
+			<DCCReference Include="f_simplex2.pas"/>
+			<DCCReference Include="mmProc\ss_multi.pas"/>
+			<DCCReference Include="ss_auto.pas">
+				<Form>fmAutoMag</Form>
+			</DCCReference>
+			<DCCReference Include="ado3.pas"/>
+			<DCCReference Include="optimal\godog.pas"/>
+			<DCCReference Include="optimal\simp.pas"/>
+			<DCCReference Include="optimal\op2d.pas">
+				<Form>fmOp2d</Form>
+			</DCCReference>
+			<DCCReference Include="sq\god2.pas"/>
+			<DCCReference Include="sq\simp2.pas"/>
+			<DCCReference Include="sq\optim.pas">
+				<Form>fmOptim</Form>
+			</DCCReference>
+			<DCCReference Include="optimal\uni_mesh.pas"/>
+			<DCCReference Include="ec_auto.pas">
+				<Form>fmAutoEC</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">magnum3d_ec3.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<Language>
+						<Language Name="ProjectLang">$00000419</Language>
+					</Language>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">3</VersionInfo>
+						<VersionInfo Name="MinorVer">9</VersionInfo>
+						<VersionInfo Name="Release">12</VersionInfo>
+						<VersionInfo Name="Build">77</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1049</VersionInfo>
+						<VersionInfo Name="CodePage">1251</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Andrew Inc.</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">Field modeling program</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">3.9.12.77</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">mg3</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks">Andrew Inc.</VersionInfoKeys>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">MagNum3D</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">3.11</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

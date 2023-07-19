@@ -1,0 +1,72 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{C0943B51-DB3A-4F09-A697-BB854E159C96}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Ariel.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ArielAquire.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="libariel.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="libTester.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Ariel">
+			<MSBuild Projects="Ariel.dproj"/>
+		</Target>
+		<Target Name="Ariel:Clean">
+			<MSBuild Targets="Clean" Projects="Ariel.dproj"/>
+		</Target>
+		<Target Name="Ariel:Make">
+			<MSBuild Targets="Make" Projects="Ariel.dproj"/>
+		</Target>
+		<Target Name="ArielAquire">
+			<MSBuild Projects="ArielAquire.dproj"/>
+		</Target>
+		<Target Name="ArielAquire:Clean">
+			<MSBuild Targets="Clean" Projects="ArielAquire.dproj"/>
+		</Target>
+		<Target Name="ArielAquire:Make">
+			<MSBuild Targets="Make" Projects="ArielAquire.dproj"/>
+		</Target>
+		<Target Name="libariel">
+			<MSBuild Projects="libariel.dproj"/>
+		</Target>
+		<Target Name="libariel:Clean">
+			<MSBuild Targets="Clean" Projects="libariel.dproj"/>
+		</Target>
+		<Target Name="libariel:Make">
+			<MSBuild Targets="Make" Projects="libariel.dproj"/>
+		</Target>
+		<Target Name="libTester">
+			<MSBuild Projects="libTester.dproj"/>
+		</Target>
+		<Target Name="libTester:Clean">
+			<MSBuild Targets="Clean" Projects="libTester.dproj"/>
+		</Target>
+		<Target Name="libTester:Make">
+			<MSBuild Targets="Make" Projects="libTester.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Ariel;ArielAquire;libariel;libTester"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Ariel:Clean;ArielAquire:Clean;libariel:Clean;libTester:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Ariel:Make;ArielAquire:Make;libariel:Make;libTester:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

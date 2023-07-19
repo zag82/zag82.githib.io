@@ -1,0 +1,9 @@
+$body-bg: #9e9e9e;
+$body-color: #121212;
+
+@import '~bootstrap/scss/bootstrap';
+
+// project modules
+@import 'utils';
+@import 'additions';
+@import 'grid';
