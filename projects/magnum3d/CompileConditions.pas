@@ -1,3 +1,0 @@
-{$DEFINE CompileSingle}
-
-
