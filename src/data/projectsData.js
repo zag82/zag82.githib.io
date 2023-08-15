@@ -12,6 +12,9 @@
  * @property {string[]} extra.link - link to site or repository online
  */
 
+const release_url =
+  'https://github.com/zag82/zag82.github.io/releases/download/v1.0';
+
 /**
  * @type {ProjectType[]}
  */
@@ -51,26 +54,8 @@ export const projectsEn = [
       'View extended properties on eny selected item',
       'Collapse and expand cost additional information'
     ],
-    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/gsmeta',
+    src: `${release_url}/gsmeta.7z`,
     img: '/img/projects/gsmeta.png'
-  },
-  {
-    name: 'QNotes',
-    description: 'Web application for notes and tips storing',
-    overview: `
-      This application was made during React studying. But later I started to use
-      it in my life, so it is constantly developed and improved for better user 
-      experience and quality. It is built using React. Additional libraries are 
-      Bootstrap, React-Router and FontAwesome. Firebase is used as a backend.
-    `,
-    features: [
-      'Note storing with category value',
-      'Filter notes by categories',
-      'categories list paramenter can be changed manually using Firebase admin panel',
-      'Application is mobile friendly and can be saved at mobile phone starting page',
-      'Notes are constantly sync with Firebase server database'
-    ],
-    img: '/img/projects/qnotes.png'
   },
   {
     name: 'Gosstroysmeta',
@@ -133,7 +118,7 @@ export const projectsEn = [
       'Manual signal analysis',
       'Scripting module for data processing automation'
     ],
-    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/ariel',
+    src: `${release_url}/ariel.7z`,
     img: '/img/projects/ariel.png'
   },
   {
@@ -155,7 +140,7 @@ export const projectsEn = [
       'Calculations of potentials, flux dencity, intencity',
       'Calculations on magnetic curve for ferromagnetic materials'
     ],
-    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/magnum3d',
+    src: `${release_url}/magnum3d.7z`,
     img: '/img/projects/magnum3d.png'
   }
 ];
@@ -200,27 +185,8 @@ export const projectsRu = [
       'Просмотр дополнительной информации по выбранному элементу',
       'Сворачивание и разворачивание расценок для просмотра дополнительной детализациии'
     ],
-    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/gsmeta',
+    src: `${release_url}/gsmeta.7z`,
     img: '/img/projects/gsmeta.png'
-  },
-  {
-    name: 'QNotes',
-    description: 'Веб приложение для хранения заметок',
-    overview: `
-      Это приложение я писал для изучения React, но в последствии стал пользоваться 
-      им постоянно. Поскольку пользуюсь часто для сохранения своих заметок, то 
-      приложение постоянно развивается и адаптируется для большего удобства и качества. 
-      Сделано на React с использованием Bootstrap, React-Router и FontAwesome. 
-      В качестве бекэнда используется Firebase.
-    `,
-    features: [
-      'Сохранение заметок с указанием категории',
-      'Фильтрация заметок по категориям',
-      'Набор категорий и цветов можно поменять в ручном режиме через админку Firebase',
-      'Приложение адаптировано для мобильных телефонов',
-      'Данные приложения постоянно синхронизированы с базой на сервере'
-    ],
-    img: '/img/projects/qnotes.png'
   },
   {
     name: 'Gosstroysmeta',
@@ -283,7 +249,7 @@ export const projectsRu = [
       'Ручной анализ сигналов',
       'Скриптовой модуль для автоматизации анализа и обработки данных'
     ],
-    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/ariel',
+    src: `${release_url}/ariel.7z`,
     img: '/img/projects/ariel.png'
   },
   {
@@ -305,7 +271,7 @@ export const projectsRu = [
       'Расчет потенциалов, плотности потока',
       'Учет кривой намагничивания для магнитных материалов'
     ],
-    src: 'https://github.com/zag82/zag82.github.io/tree/main/projects/magnum3d',
+    src: `${release_url}/magnum3d.7z`,
     img: '/img/projects/magnum3d.png'
   }
 ];
