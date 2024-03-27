@@ -7,4 +7,4 @@ Some words about me as a developer
 #### Links:
 
 - [zag82 - GitHub profile](https://github.com/zag82)
-- [Telegram](https://t.me/zag82) :
+- [telegram](https://t.me/zag82)
