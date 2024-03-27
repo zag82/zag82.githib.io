@@ -1,4 +1,4 @@
-# Andrey Zhdanov - personal
+# Andrey Zhdanov - personal pages
 
 Some words about me as a developer
 
