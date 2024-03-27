@@ -1,6 +1,6 @@
 ## About me
 
-I am application developer for web and desktop.
+I am application developer for web and desktop ([resume](./RESUME_en.MD)).
 
 I prefer healthy life full of sport activities without smoking and alcohol.
 
