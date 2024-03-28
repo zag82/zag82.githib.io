@@ -1,23 +1,6 @@
-## About me
+# My projects
 
-I am application developer for web and desktop ([resume](./RESUME_en.MD)).
-
-I prefer healthy life full of sport activities without smoking and alcohol.
-
-My preference in life is to be honest with people and myself.
-
-#### My hobbies and activities:
-
-- coding
-- gardening
-- cycling
-- electronics
-- work-with-wood
-- running
-
-## My projects
-
-### WebSmeta
+## WebSmeta
 
 Huge enterprise web app for local estimate
 ![](./img/websmeta.png)
@@ -40,7 +23,7 @@ Distributed web-application for local estimates creation having lots of features
 
 ---
 
-### GSmeta
+## GSmeta
 
 Sample web application to show estimate calculations
 ![](./img/gsmeta.png)
@@ -60,7 +43,7 @@ This application was made as a sample to show React possibilities to make fully 
 
 ---
 
-### Gosstroysmeta
+## Gosstroysmeta
 
 Desktop office application for construction estimates
 ![](./img/gss.png)
@@ -81,7 +64,7 @@ This application was written at my full time job in team of developers. Program 
 
 ---
 
-### Promo
+## Promo
 
 Web projects for promo-software.com
 ![](./img/promo.png)
@@ -102,7 +85,7 @@ Several sites for BTL advertisement to present data from merchandizers. All site
 
 ---
 
-### Ariel
+## Ariel
 
 Program for acquiring and processing eddy current signals from PL500 device
 ![](./img/ariel.png)
@@ -125,7 +108,7 @@ Program allows you to connect to Rohman PL500 eddy current testing device and st
 
 ---
 
-### MagNum3D
+## MagNum3D
 
 Finite elements method modelling program
 ![](./img/magnum3d.png)
@@ -145,3 +128,7 @@ This finite elements method modelling program allows calculate electromagnetic f
 #### Links
 
 - [magnum3d - github repo](https://github.com/zag82/magnum3d)
+
+---
+
+[Back](./README.md)

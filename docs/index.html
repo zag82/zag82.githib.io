@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Andrey Zhdanov - software developer" />
+    <meta name="author" content="zag82" />
+
+    <title>Andrey Zhdanov - software developer</title>
+
+    <style type="text/css">
+      /* common styles and settings */
+      :root {
+        /* color palette */
+        --primary-color-dark: #455a64;
+        --primary-color: #1e1e1e;
+        --primary-color-light: #cfd8dc;
+        --primary-color-text: #ffffff;
+        --primary-text-color: #212121;
+        --secondary-text-color: #757575;
+        --divider-color: #bdbdbd;
+        /* fonts */
+        --font-main: sans-serif;
+        /* sizes */
+        --small-size: 600px;
+        --big-size: 1280px;
+      }
+      /* Styles for application */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: var(--primary-color);
+        color: var(--primary-color-text);
+        font-family: var(--font-main);
+        background-image: url('./img/home.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .container {
+        width: 80%;
+        max-width: var(--big-size);
+        margin: 0 auto;
+      }
+      /* pages */
+      .navbar {
+        background-color: var(--primary-color-dark);
+        border-bottom: 1px solid var(--primary-text-color);
+        padding: 2rem 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      .navbar .nav-group {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar .nav-link {
+        color: var(--divider-color);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .navbar .nav-link:hover {
+        color: var(--primary-color-light);
+      }
+
+      #about {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #about .about-card {
+        background-color: var(--primary-color-dark);
+        border: 1px solid var(--secondary-text-color);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        max-width: var(--small-size);
+        margin: 2rem auto;
+      }
+      #about .about-img {
+        color: var(--divider-color);
+        text-align: center;
+      }
+      #about .about-img img {
+        border-radius: 100%;
+        margin: 1rem 0 0 1rem;
+        width: 150px;
+      }
+      #about .about-context {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 1rem;
+      }
+      #about .about-context p {
+        color: var(--divider-color);
+        margin-top: 0.5rem;
+      }
+      #about .about-badges {
+        font-size: 90%;
+        text-align: center;
+      }
+      #about .about-badges span {
+        background-color: var(--primary-text-color);
+        border-radius: 0.3rem;
+        display: inline-block;
+        margin: 0.2rem 0.1rem;
+        padding: 0.1rem 0.4rem;
+      }
+      /* styling for mobile */
+      @media screen and ((max-width: 600px) or (max-height: 600px)) {
+        .container {
+          width: 95%;
+        }
+        .navbar {
+          position: static;
+        }
+        #about {
+          justify-content: start;
+        }
+        #about .about-card {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <script>
+      let lang = 'ru';
+
+      function updateLang() {
+        const nm = document.getElementById('about-name');
+        nm.innerHTML =
+          lang === 'en' ? 'Andrey<br/>Zhdanov' : 'Андрей<br/>Жданов';
+        const txt = document.getElementById('about-text');
+        txt.innerHTML =
+          lang === 'en'
+            ? `<h3>About me</h3>
+            <p>I am application developer for web and desktop.</p>
+            <p>
+              I prefer healthy life full of sport activities without smoking and
+              alcohol.
+            </p>
+            <p>My preference in life is to be honest with people and myself.</p>
+            <p class="about-badges">
+              <span>#coding</span> 
+              <span>#gardening</span>
+              <span>#cycling</span>
+              <span>#electronics</span>
+              <span>#work-with-wood</span> 
+              <span>#running</span> 
+            </p>`
+            : `<h3>Обо мне</h3>
+            <p>Я разработчик настольных и интернет приложений.</p>
+            <p>
+              Веду здоровый образ жизни, занимаюсь спортом, не приемлю курение и
+              алкоголь.
+            </p>
+            <p>Ценю в людях честность по отношению к окружающим и себе.</p>
+            <p class="about-badges">
+              <span>#программирование</span>
+              <span>#садоводство</span>
+              <span>#велосипед</span>
+              <span>#столярка</span>
+              <span>#электроника</span>
+              <span>#бег</span>
+            </p>`;
+      }
+      function doLoad() {
+        updateLang();
+      }
+      function setLang(value) {
+        lang = value;
+        updateLang();
+      }
+    </script>
+  </head>
+  <body onload="doLoad()">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-group">
+          <div style="justify-self: start">
+            <a
+              class="nav-link"
+              href="https://github.com/zag82/zag82.github.io/"
+            >
+              Me on GitHub
+            </a>
+          </div>
+          <div style="margin-left: auto">
+            <a class="nav-link" onclick="setLang('ru')">RU</a> |
+            <a class="nav-link" onclick="setLang('en')">EN</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+      <div class="container">
+        <div class="about-card">
+          <div class="about-img">
+            <img src="./img/me.jpg" alt="profile" />
+            <div id="about-name"></div>
+          </div>
+          <div class="about-context" id="about-text"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
