@@ -132,7 +132,8 @@
       }
     </style>
     <script>
-      let lang = 'ru';
+      let lang = localStorage.getItem('lang') || 'ru';
+      localStorage.setItem('lang', lang);
 
       function updateLang() {
         const nm = document.getElementById('about-name');
@@ -177,6 +178,7 @@
       }
       function setLang(value) {
         lang = value;
+        localStorage.setItem('lang', lang);
         updateLang();
       }
     </script>
